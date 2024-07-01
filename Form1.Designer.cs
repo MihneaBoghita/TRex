@@ -89,9 +89,10 @@
             // ScoreText
             // 
             this.ScoreText.AutoSize = true;
+            this.ScoreText.Font = new System.Drawing.Font("Impact", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ScoreText.Location = new System.Drawing.Point(36, 26);
             this.ScoreText.Name = "ScoreText";
-            this.ScoreText.Size = new System.Drawing.Size(50, 13);
+            this.ScoreText.Size = new System.Drawing.Size(62, 19);
             this.ScoreText.TabIndex = 4;
             this.ScoreText.Text = "Score : 0";
             // 
@@ -103,9 +104,9 @@
             // MetorPictureBox
             // 
             this.MetorPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("MetorPictureBox.Image")));
-            this.MetorPictureBox.Location = new System.Drawing.Point(258, 41);
+            this.MetorPictureBox.Location = new System.Drawing.Point(258, 48);
             this.MetorPictureBox.Name = "MetorPictureBox";
-            this.MetorPictureBox.Size = new System.Drawing.Size(348, 275);
+            this.MetorPictureBox.Size = new System.Drawing.Size(348, 268);
             this.MetorPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.MetorPictureBox.TabIndex = 5;
             this.MetorPictureBox.TabStop = false;
@@ -124,6 +125,7 @@
             this.Controls.Add(this.FloorPictureBox);
             this.Name = "Form1";
             this.Text = "TRex Runner";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.FloorPictureBox)).EndInit();

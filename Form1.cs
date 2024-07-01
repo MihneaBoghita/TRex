@@ -57,7 +57,7 @@ namespace TRex
         {
             TRexPictureBox.Top = TRexPictureBox.Top + jumpSpeed;
 
-            ScoreText.Text = "Score: " + score + " Jumping speed: " + jumpSpeed + " force: " + force + " Top:" + TRexPictureBox.Top + " Bottom:" + TRexPictureBox.Bottom;
+            ScoreText.Text = "Score: " + score;
 
             if (jumping == true && force < 0)
             {
@@ -135,6 +135,11 @@ namespace TRex
         }
 
         private void TRexPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

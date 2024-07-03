@@ -16,7 +16,7 @@ namespace TRex
         bool isGameOver = false;
         Random Random = new Random();
         int jumpSpeed;
-        int force = 12;
+        int force = 6;
         int score = 0;
         int obstacleSpeed = 10;
         int position = 0;
@@ -31,7 +31,7 @@ namespace TRex
         private void GameReset()
         {
             jumping = false;
-            force = 12; 
+            force = 6; 
             score = 0;
             jumpSpeed = 0;
             obstacleSpeed = 10;
@@ -77,7 +77,7 @@ namespace TRex
 
             if (TRexPictureBox.Top > 366 && jumping == false)
             {
-                force = 12;
+                force = 8;
                 TRexPictureBox.Top = 367;
                 jumpSpeed = 0;
             }
@@ -118,6 +118,10 @@ namespace TRex
                 jumping = true;
                 jumpSpeed = -force; 
             }
+            if (e.KeyCode == Keys.X)
+            {
+                TRexPictureBox.Image = Properties.Resources.obstacle_1;
+            }
         }
 
         private void KeyIsUp(object sender, KeyEventArgs e)
@@ -132,6 +136,12 @@ namespace TRex
             {
                 GameReset();
             }
+            if(e.KeyCode == Keys.X)
+            {
+                TRexPictureBox.Image = Properties.Resources.running;
+            }
+         
+
         }
 
         private void TRexPictureBox_Click(object sender, EventArgs e)

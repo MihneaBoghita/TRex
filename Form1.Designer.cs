@@ -104,7 +104,7 @@
             // MetorPictureBox
             // 
             this.MetorPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("MetorPictureBox.Image")));
-            this.MetorPictureBox.Location = new System.Drawing.Point(258, 48);
+            this.MetorPictureBox.Location = new System.Drawing.Point(258, 26);
             this.MetorPictureBox.Name = "MetorPictureBox";
             this.MetorPictureBox.Size = new System.Drawing.Size(348, 268);
             this.MetorPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -124,7 +124,7 @@
             this.Controls.Add(this.TRexPictureBox);
             this.Controls.Add(this.FloorPictureBox);
             this.Name = "Form1";
-            this.Text = "TRex Runner";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
